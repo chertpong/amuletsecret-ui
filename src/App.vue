@@ -9,8 +9,8 @@
       <v-list>
         <v-list-tile
           router
-          v-for="(item, i) in items"
-          :key="i"
+          v-for="(item, index) in items"
+          :key="index"
           :to="item.to"
         >
           <v-list-tile-action>
@@ -56,7 +56,7 @@
         fixed: false,
         items: [
           { icon: 'apps', title: 'Home', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
+          { icon: 'fa-sign-in', title: 'Login', to: '/authenticate' }
         ],
         miniVariant: false,
         right: false,
